@@ -5,11 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/13ernkastel/security-findings">
-    <img src="https://img.shields.io/badge/security-findings-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="security findings repo"/>
-  </a>
-  <a href="https://github.com/13ernkastel?tab=pull-requests">
-    <img src="https://img.shields.io/badge/public-prs-1d4ed8?style=for-the-badge&logo=github&logoColor=white" alt="public prs"/>
+  <a href="https://github.com/pulls?q=is%3Apr+author%3A13ernkastel+is%3Amerged">
+    <img src="https://img.shields.io/badge/merged-prs-1d4ed8?style=for-the-badge&logo=github&logoColor=white" alt="merged prs"/>
   </a>
   <a href="https://github.com/13ernkastel?tab=repositories">
     <img src="https://img.shields.io/badge/repos-0369a1?style=for-the-badge&logo=github&logoColor=white" alt="repositories"/>
@@ -27,6 +24,12 @@
 
 I spend most of my time in Python, JavaScript, and TypeScript codebases, usually around FastAPI-style backends, agent runtimes, retrieval systems, sandboxes, and CI pipelines.
 
+### GitHub stats
+<p>
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=13ernkastel&show_icons=true&hide_border=true&rank_icon=github&bg_color=00000000&title_color=38BDF8&text_color=CBD5E1&icon_color=38BDF8" alt="GitHub stats"/>
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=13ernkastel&layout=compact&hide_border=true&bg_color=00000000&title_color=38BDF8&text_color=CBD5E1" alt="Top languages"/>
+</p>
+
 ### Public contribution highlights
 | Project | What I worked on | Link |
 | --- | --- | --- |
@@ -34,11 +37,9 @@ I spend most of my time in Python, JavaScript, and TypeScript codebases, usually
 | deer-flow | Stored XSS mitigation for artifact rendering and download handling | [#1389](https://github.com/bytedance/deer-flow/pull/1389) |
 | OpenViking | Enforced authentication on bot proxy chat endpoints | [#996](https://github.com/volcengine/OpenViking/pull/996) |
 | OpenViking | Rejected unsafe ZIP member paths during `.ovpack` import | [#344](https://github.com/volcengine/OpenViking/pull/344) |
-| OpenViking | Added tags metadata support for cross-subtree retrieval | [#1162](https://github.com/volcengine/OpenViking/pull/1162) |
-| NemoClaw | Runtime hardening, onboarding, allowlists, and control-plane safety work | [Open PRs](https://github.com/NVIDIA/NemoClaw/pulls?q=is%3Apr+author%3A13ernkastel+is%3Aopen) |
+| deer-flow | Security review and safe download enforcement work in the fork-to-upstream fix path | [#2](https://github.com/13ernkastel/deer-flow/pull/2) |
 
 ### Security work
-- Archive: [13ernkastel/security-findings](https://github.com/13ernkastel/security-findings)
 - Recent finding coverage includes deer-flow, OpenViking, Trae Agent, and FlowGram AI.
 - Common issue classes in my reports: shell escape, XSS, SSRF, command injection, unsafe archive extraction, prompt poisoning, and unauthenticated management or chat APIs.
 - I usually contribute a fix path, tests, and a disclosure-ready writeup rather than stopping at issue triage.
