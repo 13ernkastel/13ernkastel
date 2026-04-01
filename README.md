@@ -26,8 +26,8 @@ I spend most of my time in Python, JavaScript, and TypeScript codebases, usually
 
 ### GitHub stats
 <p>
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=13ernkastel&show_icons=true&hide_border=true&rank_icon=github&bg_color=00000000&title_color=38BDF8&text_color=CBD5E1&icon_color=38BDF8" alt="GitHub stats"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=13ernkastel&layout=compact&hide_border=true&bg_color=00000000&title_color=38BDF8&text_color=CBD5E1" alt="Top languages"/>
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=13ernkastel&theme=github_dark" alt="GitHub stats"/>
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=13ernkastel&theme=github_dark" alt="Top languages"/>
 </p>
 
 ### Public contribution highlights
