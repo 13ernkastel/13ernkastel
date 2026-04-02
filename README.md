@@ -11,7 +11,15 @@
   <a href="https://github.com/13ernkastel?tab=repositories">
     <img src="https://img.shields.io/badge/repos-0369a1?style=for-the-badge&logo=github&logoColor=white" alt="repositories"/>
   </a>
+  <a href="https://www.linkedin.com/in/lennon-chia/">
+    <img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/>
+  </a>
 </p>
+
+### What this reflects
+I like work that starts with a concrete failure mode and ends with something another engineer can trust: a fix, a test, and a writeup that explains why the issue mattered. Most of what I do sits in the overlap between security research, backend systems, and AI agent infrastructure, where the hard part is usually not spotting risk but turning it into something reproducible and actionable.
+
+I tend to focus on the places where agent systems quietly cross trust boundaries: shell execution, retrieval, memory, file handling, network access, auth, and the gaps between developer intent and runtime behavior. I care a lot about making those edges easier to reason about.
 
 ### What I contribute
 - Security research and remediation for AI agent and developer platforms: host-shell escape, stored XSS, SSRF, prompt poisoning, command injection, path traversal, and unauthenticated API exposure.
@@ -43,6 +51,9 @@ I spend most of my time in Python, JavaScript, and TypeScript codebases, usually
 - Recent finding coverage includes deer-flow, OpenViking, Trae Agent, and FlowGram AI.
 - Common issue classes in my reports: shell escape, XSS, SSRF, command injection, unsafe archive extraction, prompt poisoning, and unauthenticated management or chat APIs.
 - I usually contribute a fix path, tests, and a disclosure-ready writeup rather than stopping at issue triage.
+
+### Elsewhere
+- LinkedIn: [linkedin.com/in/lennon-chia](https://www.linkedin.com/in/lennon-chia/)
 
 ### Current focus
 - AI agent security reviews
