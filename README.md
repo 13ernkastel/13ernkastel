@@ -30,6 +30,12 @@ I work on AI agent security, retrieval, and backend hardening, with a focus on f
 
 I spend most of my time in Python, JavaScript, and TypeScript codebases, usually around FastAPI-style backends, agent runtimes, retrieval systems, sandboxes, and CI pipelines.
 
+### GitHub stats
+<p align="center">
+  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=13ernkastel&theme=github_dark" alt="GitHub stats"/>
+  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=13ernkastel&theme=github_dark" alt="Top languages"/>
+</p>
+
 ### Selected work
 | Project | What I worked on | Link |
 | --- | --- | --- |
