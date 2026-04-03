@@ -1,7 +1,9 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=130&color=0:0f172a,100:38bdf8&section=header&text=13ernkastel&fontColor=ffffff&fontSize=42&fontAlignY=36&desc=Security%20research%20for%20AI%20agent%20systems%20and%20backend%20platforms&descAlignY=60" alt="header"/>
+<!-- markdownlint-disable MD013 MD033 MD041 -->
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=130&color=0:0f172a,100:38bdf8&section=header&text=13ernkastel&fontColor=ffffff&fontSize=42&fontAlignY=36&desc=Upstream%20security%20fixes%20for%20AI%20agents%2C%20retrieval%2C%20and%20backend%20systems&descAlignY=60" alt="header"/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=800&color=38BDF8&center=true&vCenter=true&width=980&lines=I+work+on+AI+agent+security%2C+retrieval%2C+and+backend+hardening;Contributor+to+OpenViking%2C+deer-flow%2C+NemoClaw%2C+and+Trae+Agent;I+ship+fixes%2C+tests%2C+and+disclosure-ready+writeups" alt="typing intro"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=800&color=38BDF8&center=true&vCenter=true&width=980&lines=I+work+on+agent-runtime+security%2C+retrieval+hardening%2C+and+backend+remediation;Current+repos%3A+NemoClaw%2C+OpenViking%2C+deer-flow%2C+and+CoPaw;I+turn+findings+into+tested+PRs%2C+CI+fixes%2C+and+clear+writeups" alt="typing intro"/>
 </p>
 
 <p align="center">
@@ -16,48 +18,73 @@
   </a>
 </p>
 
-### Summary
-I work on AI agent security, retrieval, and backend hardening, with a focus on fixes that are reproducible, tested, and backed by clear writeups. Most of my recent work is around trust boundaries in agent systems, including shell execution, memory, file handling, network access, and auth.
+## What I Do
 
-### Focus areas
-- AI agent and developer-platform security: host-shell escape, stored XSS, SSRF, prompt poisoning, command injection, path traversal, and unauthenticated API exposure.
-- Retrieval and context systems: search plumbing, tags-based cross-subtree retrieval, safer memory and resource access paths, and agent-facing RAG improvements.
-- Backend hardening: auth boundaries, file handling, archive validation, network safeguards, and safer runtime defaults.
-- Delivery around fixes: focused tests, lint and CI cleanup, reproducible writeups, and remediation PRs.
+I work at the boundary between AI agents, backend systems, and security remediation.
+Most of my work starts from a concrete bug, review comment, or disclosure draft and
+ends in an upstream patch, regression tests, and a writeup that makes the fix easy to review.
 
-### Main tech
+## Current Focus
+
+- Agent and sandbox hardening: shell execution, sandbox boundaries, onboarding safety, auth defaults, and config exposure.
+- Retrieval and data-plane fixes: tags-based retrieval, task ownership boundaries, private-network SSRF, archive validation, and safer resource ingestion.
+- Fix delivery: CI triage, lint cleanup, follow-up hardening, docs clarifications, and disclosure-ready remediation work.
+
+## Main Tech
+
 [![My Skills](https://skillicons.dev/icons?i=py,ts,js,nodejs,react,docker,linux,git,githubactions,bash,rust,postgres,sqlite)](https://skillicons.dev)
 
 I spend most of my time in Python, JavaScript, and TypeScript codebases, usually around FastAPI-style backends, agent runtimes, retrieval systems, sandboxes, and CI pipelines.
 
-### GitHub stats
+## Current Public Work
+
+| Repo | Focus | Link |
+| --- | --- | --- |
+| NVIDIA/NemoClaw | Harden sandbox command execution and align sandbox-name validation paths | [#1416](https://github.com/NVIDIA/NemoClaw/pull/1416) |
+| NVIDIA/NemoClaw | Clarify security reporting path directly to NVIDIA PSIRT | [#1412](https://github.com/NVIDIA/NemoClaw/pull/1412) |
+| NVIDIA/NemoClaw | Align published support statuses with the PRD and docs | [#1413](https://github.com/NVIDIA/NemoClaw/pull/1413) |
+| volcengine/OpenViking | Restore cross-subtree retrieval with legacy schema compatibility | [#1205](https://github.com/volcengine/OpenViking/pull/1205) |
+| bytedance/deer-flow | Fix unauthenticated memory disclosure and prompt poisoning | [#1648](https://github.com/bytedance/deer-flow/pull/1648) |
+| agentscope-ai/CoPaw | Remove localhost API auth bypass | [#2840](https://github.com/agentscope-ai/CoPaw/pull/2840) |
+
+## Selected Merged Fixes
+
+| Repo | What shipped | Link |
+| --- | --- | --- |
+| volcengine/OpenViking | Fixed task API ownership leakage | [#1182](https://github.com/volcengine/OpenViking/pull/1182) |
+| volcengine/OpenViking | Recovered stale commit state on current `main` for the opencode plugin | [#1187](https://github.com/volcengine/OpenViking/pull/1187) |
+| bytedance/deer-flow | Critical host-shell escape remediation in `LocalSandboxProvider` | [#1547](https://github.com/bytedance/deer-flow/pull/1547) |
+| volcengine/OpenViking | Enforced authentication on bot proxy chat endpoints | [#996](https://github.com/volcengine/OpenViking/pull/996) |
+| volcengine/OpenViking | Rejected unsafe ZIP member paths during `.ovpack` import | [#344](https://github.com/volcengine/OpenViking/pull/344) |
+
+## How I Work
+
+- Reproduce the issue first instead of patching blindly.
+- Fix the trust boundary, not just the immediate sink.
+- Add regression coverage so the same failure does not come back in review or CI.
+- Stay on the PR until comments are addressed and checks are green.
+
+## GitHub Stats
+
 <p align="center">
   <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=13ernkastel&theme=github_dark" alt="GitHub stats"/>
   <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=13ernkastel&theme=github_dark" alt="Top languages"/>
 </p>
 
-### Selected work
-| Project | What I worked on | Link |
-| --- | --- | --- |
-| deer-flow | Critical host-shell escape remediation in `LocalSandboxProvider` | [#1547](https://github.com/bytedance/deer-flow/pull/1547) |
-| OpenViking | Enforced authentication on bot proxy chat endpoints | [#996](https://github.com/volcengine/OpenViking/pull/996) |
-| deer-flow | Stored XSS mitigation for artifact rendering and download handling | [#1389](https://github.com/bytedance/deer-flow/pull/1389) |
-| OpenViking | Rejected unsafe ZIP member paths during `.ovpack` import | [#344](https://github.com/volcengine/OpenViking/pull/344) |
-| deer-flow | Security review and safe download enforcement work in the fork-to-upstream fix path | [#2](https://github.com/13ernkastel/deer-flow/pull/2) |
+## Repos I Spend Time In
 
-### Repos I spend time in
 <p>
+  <a href="https://github.com/NVIDIA/NemoClaw">
+    <img src="https://img.shields.io/badge/NemoClaw-agent%20runtime%20%2F%20sandbox%20hardening-0f766e?style=for-the-badge&logo=github&logoColor=white" alt="NemoClaw"/>
+  </a>
   <a href="https://github.com/volcengine/OpenViking">
-    <img src="https://img.shields.io/badge/OpenViking-context%20db%20%2F%20retrieval-111827?style=for-the-badge&logo=github&logoColor=white" alt="OpenViking"/>
+    <img src="https://img.shields.io/badge/OpenViking-retrieval%20%2F%20backend%20security-111827?style=for-the-badge&logo=github&logoColor=white" alt="OpenViking"/>
   </a>
   <a href="https://github.com/bytedance/deer-flow">
     <img src="https://img.shields.io/badge/deer--flow-agent%20runtime%20%2F%20security-1f2937?style=for-the-badge&logo=github&logoColor=white" alt="deer-flow"/>
   </a>
-  <a href="https://github.com/NVIDIA/NemoClaw">
-    <img src="https://img.shields.io/badge/NemoClaw-secure%20OpenClaw%20runtime-0f766e?style=for-the-badge&logo=github&logoColor=white" alt="NemoClaw"/>
-  </a>
-  <a href="https://github.com/bytedance/trae-agent">
-    <img src="https://img.shields.io/badge/Trae%20Agent-tooling%20%2F%20security-334155?style=for-the-badge&logo=github&logoColor=white" alt="Trae Agent"/>
+  <a href="https://github.com/agentscope-ai/CoPaw">
+    <img src="https://img.shields.io/badge/CoPaw-auth%20boundaries%20%2F%20service%20hardening-334155?style=for-the-badge&logo=github&logoColor=white" alt="CoPaw"/>
   </a>
 </p>
 
