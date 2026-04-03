@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD013 MD033 MD041 -->
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=130&color=0:0f172a,100:38bdf8&section=header&text=13ernkastel&fontColor=ffffff&fontSize=42&fontAlignY=36&desc=Merged%20upstream%20security%20and%20backend%20fixes&descAlignY=60" alt="header"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=130&color=0:0f172a,100:38bdf8&section=header&text=13ernkastel&fontColor=ffffff&fontSize=42&fontAlignY=45" alt="header"/>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=800&color=38BDF8&center=true&vCenter=true&width=980&lines=This+profile+shows+merged+fixes+only;Security%2C+auth%2C+retrieval%2C+archive%2C+and+runtime+hardening;Upstream+patches+with+tests+and+review-driven+follow-through" alt="typing intro"/>
