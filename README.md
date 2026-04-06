@@ -23,6 +23,8 @@
   `LocalSandboxProvider`.
 - Closed unauthenticated bot proxy access in `OpenViking`.
 - Fixed task API ownership leakage in `OpenViking`.
+- Surfaced immutable symlink hardening status in `NemoClaw` with regression
+  coverage.
 - Mitigated stored XSS in `deer-flow` by enforcing safe downloads for active
   artifact content.
 - Blocked unsafe `.ovpack` ZIP member paths during `OpenViking` import.
@@ -35,6 +37,7 @@
 | --- | --- | --- |
 | Critical shell escape | bytedance/deer-flow | [#1547](https://github.com/bytedance/deer-flow/pull/1547) |
 | Stored XSS hardening | bytedance/deer-flow | [#1389](https://github.com/bytedance/deer-flow/pull/1389) |
+| Immutable symlink hardening status | NVIDIA/NemoClaw | [#1499](https://github.com/NVIDIA/NemoClaw/pull/1499) |
 | Task ownership leakage | volcengine/OpenViking | [#1182](https://github.com/volcengine/OpenViking/pull/1182) |
 | Unauthenticated bot proxy access | volcengine/OpenViking | [#996](https://github.com/volcengine/OpenViking/pull/996) |
 | Unsafe archive import paths | volcengine/OpenViking | [#344](https://github.com/volcengine/OpenViking/pull/344) |
