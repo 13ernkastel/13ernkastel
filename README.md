@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/pulls?q=is%3Apr+author%3A13ernkastel+is%3Amerged+-user%3A13ernkastel">
-    <img src="https://img.shields.io/badge/merged-external-prs%20only%20(11)-1d4ed8?style=for-the-badge&logo=github&logoColor=white" alt="merged external prs only"/>
+    <img src="https://img.shields.io/badge/merged-external-prs%20only%20(12)-1d4ed8?style=for-the-badge&logo=github&logoColor=white" alt="merged external prs only"/>
   </a>
   <img src="https://img.shields.io/badge/focus-security%20fixes-0f766e?style=for-the-badge" alt="security fixes"/>
   <img src="https://img.shields.io/badge/focus-auth%20%26%20retrieval-111827?style=for-the-badge" alt="auth and retrieval"/>
@@ -27,17 +27,17 @@ Repositories owned by `13ernkastel` are intentionally excluded.
 
 | Scope | Value |
 | --- | --- |
-| Total merged PRs shown | 11 |
+| Total merged PRs shown | 12 |
 | Organizations / accounts | 4 |
 | Repositories | 4 |
-| Main themes | Security fixes, auth hardening, retrieval, SSRF, CI/docs, runtime stability |
+| Main themes | Security fixes, auth hardening, retrieval, SSRF, docs CI, compatibility guidance, runtime stability |
 
 ## Merged Contributions by Organization
 
 | Organization / Account | Repos | Merged PRs | Highlights |
 | --- | --- | --- | --- |
 | `volcengine` | `OpenViking` | 6 | Bot auth hardening, `.ovpack` ZIP validation, SSRF hardening, retrieval tags, task ownership fix, opencode-plugin stability |
-| `NVIDIA` | `NemoClaw` | 2 | Immutable symlink hardening status and docs CI guardrails |
+| `NVIDIA` | `NemoClaw` | 3 | Immutable symlink hardening status, docs CI guardrails, OpenShell lifecycle guidance |
 | `bytedance` | `deer-flow` | 2 | Critical shell-escape fix and stored-XSS mitigation |
 | `HKUDS` | `OpenHarness` | 1 | Path rule enforcement fix for file tools |
 
@@ -46,7 +46,7 @@ Repositories owned by `13ernkastel` are intentionally excluded.
 | Repository | Merged PRs | Contribution areas |
 | --- | --- | --- |
 | `volcengine/OpenViking` | 6 | Auth, SSRF, retrieval, task ownership, import validation, plugin stability |
-| `NVIDIA/NemoClaw` | 2 | Runtime hardening visibility, docs CI |
+| `NVIDIA/NemoClaw` | 3 | Runtime hardening visibility, docs CI, compatibility guidance |
 | `bytedance/deer-flow` | 2 | Shell escape, stored XSS |
 | `HKUDS/OpenHarness` | 1 | File-tool path rule enforcement |
 
