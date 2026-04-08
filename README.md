@@ -10,6 +10,9 @@
   <a href="https://github.com/pulls?q=is%3Apr+author%3A13ernkastel+is%3Amerged+-user%3A13ernkastel">
     <img src="https://img.shields.io/badge/external%20merged%20PRs-12-1d4ed8?style=for-the-badge&logo=github&logoColor=white" alt="external merged prs"/>
   </a>
+  <a href="#public-cves">
+    <img src="https://img.shields.io/badge/public%20CVEs%20on%20VulnCheck-5-b91c1c?style=for-the-badge" alt="public cves on vulncheck"/>
+  </a>
   <img src="https://img.shields.io/badge/owners-4-0f766e?style=for-the-badge" alt="owners"/>
   <img src="https://img.shields.io/badge/repos-4-111827?style=for-the-badge" alt="repos"/>
   <a href="https://www.linkedin.com/in/lennon-chia/">
@@ -17,7 +20,7 @@
   </a>
 </p>
 
-I contribute upstream fixes across security, auth, retrieval, SSRF, CI/docs, and runtime-hardening work. This profile is a curated snapshot of merged external pull requests only: no repositories owned by `13ernkastel`, no open PRs, and no closed-unmerged work.
+I contribute upstream fixes across security, auth, retrieval, SSRF, CI/docs, and runtime-hardening work. This profile is a curated snapshot of merged external pull requests plus public VulnCheck CVEs credited under `Chia Min Jun Lennon`: no repositories owned by `13ernkastel`, no open PRs, and no closed-unmerged work.
 
 ## What I Optimize For
 
@@ -31,9 +34,22 @@ I contribute upstream fixes across security, auth, retrieval, SSRF, CI/docs, and
 | --- | --- |
 | Snapshot date | 2026-04-08 |
 | Total merged external PRs shown | 12 |
+| Public CVEs on VulnCheck under `Chia Min Jun Lennon` | 5 |
 | Organizations / accounts | 4 |
 | Repositories | 4 |
 | Main themes | Security fixes, auth hardening, retrieval, SSRF, docs CI, compatibility guidance, runtime stability |
+
+## Public CVEs
+
+The entries below are the public VulnCheck advisories currently credited under the exact name `Chia Min Jun Lennon`.
+
+| CVE | Repository | Severity | Advisory | Fix PR |
+| --- | --- | --- | --- | --- |
+| [`CVE-2026-34430`](https://www.vulncheck.com/advisories/bytedance-deerflow-localsandboxprovider-host-bash-escape) | `bytedance/deer-flow` | High | LocalSandboxProvider host bash escape | [#1547](https://github.com/bytedance/deer-flow/pull/1547) |
+| [`CVE-2026-32859`](https://www.vulncheck.com/advisories/bytedance-deerflow-stored-xss-via-inline-artifact-rendering) | `bytedance/deer-flow` | Medium | Stored XSS via inline artifact rendering | [#1389](https://github.com/bytedance/deer-flow/pull/1389) |
+| [`CVE-2026-22207`](https://www.vulncheck.com/advisories/openviking-missing-root-api-key-allows-anonymous-root-access) | `volcengine/OpenViking` | Critical | Missing `root_api_key` allows anonymous root access | [#1132](https://github.com/volcengine/OpenViking/pull/1132) |
+| [`CVE-2026-28518`](https://www.vulncheck.com/advisories/openviking-ovpack-import-zip-slip-path-traversal) | `volcengine/OpenViking` | High | `.ovpack` import ZIP Slip path traversal | [#344](https://github.com/volcengine/OpenViking/pull/344) |
+| [`CVE-2026-34999`](https://www.vulncheck.com/advisories/openviking-bot-proxy-endpoints-allow-unauthenticated-access) | `volcengine/OpenViking` | Medium | Bot proxy endpoints allow unauthenticated access | [#996](https://github.com/volcengine/OpenViking/pull/996) |
 
 ## Selected Merged Work
 
