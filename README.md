@@ -8,31 +8,45 @@
 
 <p align="center">
   <a href="https://github.com/pulls?q=is%3Apr+author%3A13ernkastel+is%3Amerged+-user%3A13ernkastel">
-    <img src="https://img.shields.io/badge/merged-external-prs%20only%20(12)-1d4ed8?style=for-the-badge&logo=github&logoColor=white" alt="merged external prs only"/>
+    <img src="https://img.shields.io/badge/external%20merged%20PRs-12-1d4ed8?style=for-the-badge&logo=github&logoColor=white" alt="external merged prs"/>
   </a>
-  <img src="https://img.shields.io/badge/focus-security%20fixes-0f766e?style=for-the-badge" alt="security fixes"/>
-  <img src="https://img.shields.io/badge/focus-auth%20%26%20retrieval-111827?style=for-the-badge" alt="auth and retrieval"/>
+  <img src="https://img.shields.io/badge/owners-4-0f766e?style=for-the-badge" alt="owners"/>
+  <img src="https://img.shields.io/badge/repos-4-111827?style=for-the-badge" alt="repos"/>
   <a href="https://www.linkedin.com/in/lennon-chia/">
     <img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/>
   </a>
 </p>
 
-## Merged PR Policy
+I contribute upstream fixes across security, auth, retrieval, SSRF, CI/docs, and runtime-hardening work. This profile is a curated snapshot of merged external pull requests only: no repositories owned by `13ernkastel`, no open PRs, and no closed-unmerged work.
 
-Everything below is merged PR data only.
-Open PRs and closed-unmerged PRs are intentionally excluded.
-Repositories owned by `13ernkastel` are intentionally excluded.
+## What I Optimize For
 
-## Contribution Snapshot
+- Security and trust-boundary fixes that can land upstream with tests and maintainer review follow-through
+- Root-cause patches that stay narrow in scope but remove real production risk
+- Reviewable docs and CI guardrails that prevent regressions after the initial fix ships
+
+## Snapshot
 
 | Scope | Value |
 | --- | --- |
-| Total merged PRs shown | 12 |
+| Snapshot date | 2026-04-08 |
+| Total merged external PRs shown | 12 |
 | Organizations / accounts | 4 |
 | Repositories | 4 |
 | Main themes | Security fixes, auth hardening, retrieval, SSRF, docs CI, compatibility guidance, runtime stability |
 
-## Merged Contributions by Organization
+## Selected Merged Work
+
+| PR | Repository | Outcome |
+| --- | --- | --- |
+| [#1547](https://github.com/bytedance/deer-flow/pull/1547) | `bytedance/deer-flow` | Fixed a critical LocalSandbox host-shell escape and landed the upstream security patch. |
+| [#1389](https://github.com/bytedance/deer-flow/pull/1389) | `bytedance/deer-flow` | Forced safe download behavior for active artifact MIME types to mitigate stored XSS. |
+| [#1133](https://github.com/volcengine/OpenViking/pull/1133) | `volcengine/OpenViking` | Hardened HTTP resource ingestion against private-network SSRF. |
+| [#996](https://github.com/volcengine/OpenViking/pull/996) | `volcengine/OpenViking` | Closed unauthenticated access to bot proxy chat endpoints. |
+| [#1139](https://github.com/NVIDIA/NemoClaw/pull/1139) | `NVIDIA/NemoClaw` | Added pull-request docs link validation to catch broken markdown references before merge. |
+| [#32](https://github.com/HKUDS/OpenHarness/pull/32) | `HKUDS/OpenHarness` | Fixed path-rule enforcement for file tools. |
+
+## Coverage by Organization
 
 | Organization / Account | Repos | Merged PRs | Highlights |
 | --- | --- | --- | --- |
@@ -41,7 +55,7 @@ Repositories owned by `13ernkastel` are intentionally excluded.
 | `bytedance` | `deer-flow` | 2 | Critical shell-escape fix and stored-XSS mitigation |
 | `HKUDS` | `OpenHarness` | 1 | Path rule enforcement fix for file tools |
 
-## Merged Contributions by Repository
+## Coverage by Repository
 
 | Repository | Merged PRs | Contribution areas |
 | --- | --- | --- |
